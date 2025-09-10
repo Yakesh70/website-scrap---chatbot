@@ -1,0 +1,13 @@
+{
+  "name": "web-bot",
+  "version": "1.0.0",
+  "description": "RAG Chatbot with Web Scraping",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
+  },
+  "keywords": ["rag", "chatbot", "web-scraping", "ai"],
+  "author": "Yakesh",
+  "license": "MIT"
+}
