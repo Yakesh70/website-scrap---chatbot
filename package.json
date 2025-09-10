@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "RAG Chatbot with Web Scraping",
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ../server && npm install",
-    "start": "cd server && node server.js",
-    "dev": "cd server && npm run dev"
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
   },
   "keywords": ["rag", "chatbot", "web-scraping", "ai"],
-  "author": "Yakesh",
-  "license": "MIT"
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

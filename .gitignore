@@ -1,13 +1,57 @@
+# Dependencies
 node_modules/
+*/node_modules/
+
+# Environment variables
 .env
 .env.local
 .env.production
+
+# Build outputs
 dist/
 build/
+
+# Logs
 *.log
-.DS_Store
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Vercel
+.vercel
+
+# IDE
 .vscode/
 .idea/
 
+# OS
+.DS_Store
+Thumbs.db
 
-
+# Test files
+test-*.js
+debug-*.js
